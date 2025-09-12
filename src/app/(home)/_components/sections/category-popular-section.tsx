@@ -1,12 +1,10 @@
-import { fetchCategories } from "@/libs/services/categories.service"
-import { cache } from "react"
 import { BsArrowRight } from "react-icons/bs"
-import { ErrorPage } from "../error-page"
 
-export const CategoryPopularSection = async () => {
-    const categories = await getCategories()
+interface CategoryPopularSectionProps {
+    categories: string[]
+}
 
-    if(categories.error) return <ErrorPage error={categories.error}></ErrorPage>
+export const CategoryPopularSection = async ({categories}: CategoryPopularSectionProps) => {
 
     return (
         <section className="py-10">
@@ -23,12 +21,3 @@ export const CategoryPopularSection = async () => {
         </section>
     )
 }
-
-export const getCategories = cache(async () => fetchCategories())
-
-{/* <section className="py-10">
-            <div className="container max-w-6xl mx-auto px-4 lg:px-0">
-                <h2>Produk Unggulan</h2>
-                <p>Pilihan terbaik dari fashion, perhiasan, hingga elektronik untuk melengkapi gaya hidup Anda.</p>
-            </div>
-        </section> */}

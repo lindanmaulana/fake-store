@@ -4,7 +4,7 @@ interface ErrorPageProps {
 
 export const ErrorPage = ({error}: ErrorPageProps) => {
     return (
-        <main className="w-full min-h-screen flex items-center justify-center">
+        <main className="w-full min-h-screen flex flex-col items-center justify-center">
             <h4>Error Page</h4>
             <p>{error}</p>
         </main>

@@ -3,6 +3,7 @@
 import { GiHamburgerMenu } from "react-icons/gi"
 import { Navbar } from "./navbar"
 import { useState } from "react"
+import { WhatsAppButton } from "./whatsapp-button"
 
 export const Header = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -32,11 +33,13 @@ export const Header = () => {
                             <button className="text-sm font-semibold ">Tentang</button>
                         </li>
                         <li>
-                                <button className="w-full bg-gradient-to-r from-blue-600 to-purple-500 px-4 py-2 rounded-xl text-white shadow-xl shadow-purple-100">Belanja Sekarang</button>
+                            <button className="w-full bg-gradient-to-r from-blue-600 to-purple-500 px-4 py-2 rounded-xl text-white shadow-xl shadow-purple-100">Belanja Sekarang</button>
                         </li>
                     </ul>
                 </nav>
             )}
+
+            <WhatsAppButton />
         </header>
     )
 }
