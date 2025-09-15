@@ -9,7 +9,7 @@ interface WhyUsSectionProps {
 export const WhyUsSection = ({products, categories}: WhyUsSectionProps) => {
 
     return (
-        <section className="pt-16 border-t border-black/10">
+        <section id="about" className="pt-16 border-t border-black/10">
             <div className="container max-w-6xl mx-auto px-4 lg:px-0 ">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">

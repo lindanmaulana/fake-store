@@ -14,18 +14,18 @@ const ProductsPage = async () => {
     return (
         <section className="py-14">
             <div className="container max-w-6xl mx-auto px-4 lg:px-0 space-y-6">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-y-4">
                     <div>
                         <h2 className="text-2xl font-bold">Semua Produk</h2>
                         <p className="text-base text-gray-500 line-clamp-2"> Data dari Fake Store API </p>
                     </div>
-                    <div className="w-1/2 flex items-center gap-2">
+                    <div className="w-full md:w-1/2 flex items-center gap-2">
                         <SearchToolbar></SearchToolbar>
                         <FilterCategoryToolbar categories={categories} ></FilterCategoryToolbar>
                     </div>
                 </div>
 
-                <div className="grid grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     <ProductsList products={products} />
                 </div>
             </div>

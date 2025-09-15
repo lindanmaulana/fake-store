@@ -6,10 +6,9 @@ import Image from "next/image"
 import Link from "next/link"
 import { cache } from "react"
 import { FaAngleLeft, FaStar } from "react-icons/fa"
-import { PiWhatsappLogoFill } from "react-icons/pi"
 import { TbPointFilled } from "react-icons/tb"
-import { WhatsAppToolbar } from "./_components/toolbar/whatsapp-toolbar"
-import { CartToolbar } from "./_components/toolbar/cart-toolbar"
+import { AddToCartToolbar } from "./_components/toolbar/add-to-cart-toolbar"
+import { BackToolbar } from "./_components/toolbar/back-toolbar"
 
 interface Params {
     id: string
@@ -82,8 +81,8 @@ const DetailPage = async ({params}: DetailPageProps) => {
                         <p className="text-gray-500">{dataProduct.description}</p>
 
                         <div className="flex flex-col md:flex-row items-start md:items-center gap-2 py-4">
-                            <WhatsAppToolbar></WhatsAppToolbar>
-                            <CartToolbar></CartToolbar>
+                            <AddToCartToolbar product={dataProduct}></AddToCartToolbar>
+                            <BackToolbar></BackToolbar>
                         </div>
                     </div>
                 </div>

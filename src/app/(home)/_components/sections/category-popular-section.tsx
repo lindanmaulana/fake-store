@@ -7,7 +7,7 @@ interface CategoryPopularSectionProps {
 export const CategoryPopularSection = async ({categories}: CategoryPopularSectionProps) => {
 
     return (
-        <section className="py-10">
+        <section id="category" className="py-10">
             <div className="container max-w-6xl mx-auto px-4 lg:px-0">
                 <h2 className="text-2xl font-bold">Kategori Popular</h2>
                 <p className="text-base text-gray-500">Jelajahi produk berdasarkan kategori</p>

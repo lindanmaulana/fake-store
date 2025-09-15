@@ -1,5 +1,9 @@
 "use client"
 
+import Link from "next/link"
+import { Cart } from "@/app/(home)/_components/cart"
+import { Button } from "@heroui/react"
+
 export const Navbar = () => {
     
     return (
@@ -7,18 +11,21 @@ export const Navbar = () => {
             <nav className="hidden md:block">
                 <ul className="flex items-center gap-4">
                     <li>
-                        <button className="text-sm font-semibold text-gray-500">Produk</button>
+                        <Link href={"/products"} className="text-sm font-semibold text-gray-500">Produk</Link>
                     </li>
                     <li>
-                        <button className="text-sm font-semibold text-gray-500">Kategori</button>
+                        <Link href={"#category"} className="text-sm font-semibold text-gray-500">Kategori</Link>
                     </li>
                     <li>
-                        <button className="text-sm font-semibold text-gray-500">Tentang</button>
+                        <Link href={"#about"} className="text-sm font-semibold text-gray-500">Tentang</Link>
                     </li>
                 </ul>
             </nav>
 
-            <button className="hidden md:block bg-gradient-to-r from-blue-600 to-purple-500 px-4 py-2 rounded-xl text-white shadow-xl shadow-purple-100">Belanja Sekarang</button>
+            <div className="flex items-center gap-3">
+                <Cart />
+                <Button variant="shadow" as={Link} href="/products" className="hidden md:block bg-gradient-to-r from-blue-600 to-purple-500 px-4 py-2 rounded-xl text-white shadow-xl shadow-purple-100">Belanja Sekarang</Button>
+            </div>
         </>
     )
 }
