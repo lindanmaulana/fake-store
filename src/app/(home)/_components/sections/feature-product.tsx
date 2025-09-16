@@ -2,19 +2,19 @@ import Link from "next/link";
 import { products } from "../../_types/products.types";
 import { ProductList } from "../list/product-list";
 
-interface FeaturedProductSectionProps {
+interface FeaturedProductProps {
   products: products[];
 }
 
-export const FeaturedProductSection = ({
+export const FeaturedProduct = ({
   products,
-}: FeaturedProductSectionProps) => {
+}: FeaturedProductProps) => {
   return (
-    <section className="py-12">
+    <section className="py-14">
       <div className="container max-w-6xl mx-auto px-4 lg:px-0">
         <div className="flex items-center justify-between">
           <div className="w-2/3">
-            <h2 className="text-2xl font-bold">Produk Unggulan</h2>
+            <h2 className="text-2xl md:text-3xl font-bold">Produk Unggulan</h2>
             <p className="text-base text-gray-500 line-clamp-2">
               Pilihan terbaik dari fashion, perhiasan, hingga elektronik untuk
               melengkapi gaya hidup Anda.

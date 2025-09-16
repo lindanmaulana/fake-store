@@ -1,13 +1,13 @@
+import { fetchCategories } from "@/libs/services/categories.service";
+import { fetchProducts } from "@/libs/services/products.service";
 import { Metadata } from "next";
 import { cache } from "react";
 import { ErrorPage } from "./(home)/_components/error-page";
-import { CategoryPopularSection } from "./(home)/_components/sections/category-popular-section";
-import { FeaturedProductSection } from "./(home)/_components/sections/feature-product-section";
+import { CallToAction } from "./(home)/_components/sections/call-to-action";
+import { CategoryPopular } from "./(home)/_components/sections/category-popular";
+import { FeaturedProduct } from "./(home)/_components/sections/feature-product";
 import { HeroSection } from "./(home)/_components/sections/hero-section";
-import { WhyUsSection } from "./(home)/_components/sections/why-use-section";
-import { fetchProducts } from "@/libs/services/products.service";
-import { fetchCategories } from "@/libs/services/categories.service";
-import { CallToActionSection } from "./(home)/_components/sections/call-to-action-section";
+import { WhyUs } from "./(home)/_components/sections/why-use";
 
 export const metadata: Metadata = {
   title: "Fake Store | Belanja Fashion, Elektronik, & Aksesori Terlengkap Online",
@@ -16,14 +16,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Fake Store | Fashion, Elektronik, & Perhiasan",
     description: "Belanja online pakaian, elektronik, dan aksesori dengan harga terbaik.",
-    images: "http://localhost:3000/assets/images/popular-product/bag-linm-store-og.png",
+    images: "https://fake-store-beta-taupe.vercel.app/assets/images/popular-product/bag-fakestore-og.png",
     url: "http://localhost:3000"
   },
   twitter: {
     card: "summary_large_image",
     title: "Web Store | Fashion, Elektronik, & Perhiasan",
     description: "Toko online serbaguna. Belanja pakaian, elektronik, dan perhiasan dengan harga terjangkau.",
-    images: "http://localhost:3000/assets/images/popular-product/bag-linm-store-og.png",
+    images: "https://fake-store-beta-taupe.vercel.app/assets/images/popular-product/bag-fakestore-og.png",
   }
 }
 
@@ -35,10 +35,10 @@ export default async function Home() {
   return (
     <>
       <HeroSection />
-      <CategoryPopularSection categories={categories} />
-      <FeaturedProductSection products={products} />
-      <WhyUsSection products={products} categories={categories} />
-      <CallToActionSection />
+      <CategoryPopular categories={categories} />
+      <FeaturedProduct products={products} />
+      <WhyUs products={products} categories={categories} />
+      <CallToAction />
     </>
   );
 }

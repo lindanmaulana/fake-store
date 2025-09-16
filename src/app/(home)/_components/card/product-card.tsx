@@ -31,7 +31,7 @@ export const ProductCard = ({product}: ProductCardProps) => {
                     
                     <div className="flex items-center justify-between">
                         <Button onPress={() => handleAddToCart(product)} size="sm" className="font-medium text-sm flex items-center" ><BsPlus className="mt-px" />Keranjang</Button>
-                        <Link href={`/products/detail/${product.id}`} className="bg-gradient-to-r from-blue-600 to-purple-500 px-3 py-1 rounded-lg text-white shadow-xl shadow-purple-100 hover:opacity-80">Lihat</Link>
+                        <Button as={Link} size="sm" href={`/products/detail/${product.id}`} className="font-medium bg-gradient-to-r from-blue-600 to-purple-500 px-4 py-2 rounded-lg text-white shadow-xl shadow-purple-100 hover:opacity-80">Lihat</Button>
                     </div>
                 </div>
             </CardBody>

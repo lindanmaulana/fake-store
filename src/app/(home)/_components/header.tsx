@@ -4,7 +4,8 @@ import Link from "next/link"
 import { useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { IoClose } from "react-icons/io5"
-import { Navbar } from "./navbar"
+import { NavbarList } from "./list/navbar-list"
+import { NavAction } from "./nav-action"
 import { WhatsAppButton } from "./whatsapp-button"
 
 export const Header = () => {
@@ -19,8 +20,13 @@ export const Header = () => {
                         <h2 className="text-xl font-bold">Fake Store</h2>
                     </Link>
 
-                    <Navbar />
-                
+                    <nav className="hidden md:block">
+                        <ul className="flex items-center gap-4">
+                            <NavbarList />
+                        </ul>
+                    </nav>
+                    <NavAction />
+                    
                     <button onClick={() => setIsOpen(!isOpen)} className="md:hidden border border-black/10 rounded p-1"> {isOpen ? <IoClose className="text-xl" /> : <GiHamburgerMenu className="text-xl" />} </button>
                 </div>
             </div>
@@ -28,18 +34,10 @@ export const Header = () => {
             {isOpen && (
                 <nav className="w-full px-10 py-5 border-b border-black/10">
                         <ul className="space-y-5">
-                        <li>
-                            <Link href={"/products"} className="text-sm font-semibold ">Produk</Link>
-                        </li>
-                        <li>
-                            <Link href={"#category"} className="text-sm font-semibold ">Kategori</Link>
-                        </li>
-                        <li>
-                            <Link href={"#about"} className="text-sm font-semibold ">Tentang</Link>
-                        </li>
-                        <li>
-                            <button className="w-full bg-gradient-to-r from-blue-600 to-purple-500 px-4 py-2 rounded-xl text-white shadow-xl shadow-purple-100">Belanja Sekarang</button>
-                        </li>
+                            <NavbarList />
+                            <li>
+                                <button className="w-full bg-gradient-to-r from-blue-600 to-purple-500 px-4 py-2 rounded-xl text-white shadow-xl shadow-purple-100">Belanja Sekarang</button>
+                            </li>
                     </ul>
                 </nav>
             )}

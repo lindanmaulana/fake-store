@@ -4,7 +4,7 @@ export const Footer = () => {
     return (
         <footer>
             <div className="border-y border-black/10 py-10">
-                <div className="container max-w-6xl mx-auto px-4 lg:px-0 grid grid-cols-1 md:grid-cols-3 gap-y-6">
+                <div className="container max-w-6xl mx-auto px-8 lg:px-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-6">
                     <div>
                         <div className="flex items-center gap-2">
                             <div className="block size-6 bg-gradient-to-br from-blue-700 to-purple-500 rounded-lg"></div>
@@ -17,19 +17,16 @@ export const Footer = () => {
                         <h3 className="font-semibold">Navigasi</h3>
                         <ul className="text-sm text-gray-500">
                             <li>
-                                <Link href={"/"}>Produk</Link>
+                                <Link href={"/products"}>Produk</Link>
                             </li>
                             <li>
-                                <Link href={"/"}>Kategori</Link>
-                            </li>
-                            <li>
-                                <Link href={"/"}>Tentang</Link>
+                                <Link href={"/about"}>Tentang</Link>
                             </li>
                         </ul>
                     </div>
 
                     <div className="space-y-2">
-                        <h3 className="font-semibold">Navigasi</h3>
+                        <h3 className="font-semibold">Sumber</h3>
                         <p className="text-sm text-gray-500">Data oleh <a href="" className="border-b-1 border-purple-500">Fake Store API.</a></p>
                     </div>
                 </div>
