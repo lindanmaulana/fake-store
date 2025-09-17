@@ -54,7 +54,7 @@ Lalu buka http://localhost:3000 di browser.
 ## 📞 Contact Person
 Kalau ada pertanyaan atau ingin bekerja sama, hubungi saya melalui:
 
-- Email: [linmidofficial@example.com](mailto:linmidofficial@example.com)  
+- Email: [linmidofficial@gmail.com](mailto:linmidofficial@gmail.com)  
 - WhatsApp: [+62 853-2270-1120](https://wa.me/6285322701120)  
 - GitHub: [@lindanmaulana](https://github.com/lindanmaulana)  
 - LinkedIn: [Lindan Maulana](https://www.linkedin.com/in/lindan-maulana)
