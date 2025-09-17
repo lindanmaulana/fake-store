@@ -25,8 +25,8 @@ Sebelum menjalankan project ini, pastikan sudah terinstall:
 
 1. **Clone repository**
    ```bash
-   git clone https://github.com/username/tajug-fakestore.git
-   cd tajug-fakestore
+   git clone https://github.com/lindanmaulana/fake-store.git
+   cd fake-store
 
 2. **Install dependencies**
     npm install
