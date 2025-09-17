@@ -42,12 +42,12 @@ Lalu buka http://localhost:3000 di browser.
 
 ## Struktur Proyek
 .
-    ├── app/               # Folder utama App Router Next.js
-    ├── components/        # Komponen UI terpisah
-    ├── public/            # File statis (gambar, ikon, dll)
-    ├── styles/            # Styling global
-    ├── package.json
-    └── README.md
+├── app/               # Folder utama App Router Next.js
+├── components/        # Komponen UI terpisah
+├── public/            # File statis (gambar, ikon, dll)
+├── styles/            # Styling global
+├── package.json
+└── README.md
 
 ---
 
