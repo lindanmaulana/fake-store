@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+// README BY DEV linmiddev studio
+# 🛍️ Tajug FakeStore
 
-## Getting Started
+Proyek ini adalah website e-commerce sederhana yang dibangun menggunakan **Next.js**.  
+Tujuannya sebagai latihan membuat frontend modern dengan fitur-fitur dasar.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Fitur
+- ⚡ Dibangun dengan [Next.js](https://nextjs.org/) (App Router).
+- 🎨 Styling menggunakan [Tailwind CSS](https://tailwindcss.com/).
+- 🔄 Data produk diambil dari [Fake Store API](https://fakestoreapi.com/).
+- 📱 Responsif, bisa dibuka di berbagai perangkat.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Persyaratan
+Sebelum menjalankan project ini, pastikan sudah terinstall:
+- [Node.js](https://nodejs.org/) versi **18+**
+- [npm](https://www.npmjs.com/) atau [yarn](https://yarnpkg.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Cara Menjalankan
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone repository**
+   ```bash
+   git clone https://github.com/username/tajug-fakestore.git
+   cd tajug-fakestore
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies**
+    npm install
+    # atau
+    yarn install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **jalankan development server**
+    npm run dev
+    # atau
+    yarn dev
 
-## Deploy on Vercel
+Lalu buka http://localhost:3000 di browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Struktur Proyek
+.
+    ├── app/               # Folder utama App Router Next.js
+    ├── components/        # Komponen UI terpisah
+    ├── public/            # File statis (gambar, ikon, dll)
+    ├── styles/            # Styling global
+    ├── package.json
+    └── README.md
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📞 Contact Person
+Kalau ada pertanyaan atau ingin bekerja sama, hubungi saya melalui:
+
+- Email: [linmidofficial@example.com](mailto:linmidofficial@example.com)  
+- WhatsApp: [+62 853-2270-1120](https://wa.me/6285322701120)  
+- GitHub: [@lindanmaulana](https://github.com/lindanmaulana)  
+- LinkedIn: [Lindan Maulana](https://www.linkedin.com/in/lindan-maulana)
+
+
