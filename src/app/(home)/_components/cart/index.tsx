@@ -12,7 +12,7 @@ export const Cart = () => {
     const {isOpen, onOpen, onOpenChange} = useDisclosure()
 
     const {cart, subTotal, handleResetCart} = useCartStore()
-    const whatsappLink = useGenerateWhatsappLink(6285322701120)
+    const whatsappLink = useGenerateWhatsappLink(6287723855067)
 
     return (
         <>
