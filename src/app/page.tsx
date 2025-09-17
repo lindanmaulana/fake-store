@@ -16,14 +16,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Fake Store | Fashion, Elektronik, & Perhiasan",
     description: "Belanja online pakaian, elektronik, dan aksesori dengan harga terbaik.",
-    images: "https://fake-store-beta-taupe.vercel.app/assets/images/popular-product/bag-fakestore-og.png",
+    images: "https://fake-store-beta-taupe.vercel.app/assets/images/og/opengraph-image.jpg",
     url: "http://localhost:3000"
   },
   twitter: {
     card: "summary_large_image",
     title: "Web Store | Fashion, Elektronik, & Perhiasan",
     description: "Toko online serbaguna. Belanja pakaian, elektronik, dan perhiasan dengan harga terjangkau.",
-    images: "https://fake-store-beta-taupe.vercel.app/assets/images/popular-product/bag-fakestore-og.png",
+    images: "https://fake-store-beta-taupe.vercel.app/assets/images/og/opengraph-image.jpg",
   }
 }
 

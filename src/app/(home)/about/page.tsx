@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "Tentang Kami | Fake Store",
     description:
       "Fake Store adalah toko online serbaguna yang menyediakan fashion, elektronik, dan perhiasan berkualitas untuk memenuhi gaya hidup modern.",
-    images: "https://fake-store-beta-taupe.vercel.app/assets/images/og/about-fakestore-og.jpg",
+    images: "https://fake-store-beta-taupe.vercel.app/assets/images/og/opengraph-image.jpg",
     url: "https://fake-store-beta-taupe.vercel.app/about"
   },
   twitter: {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "About Us | Fake Store - Fashion, Elektronik, & Perhiasan",
     description:
       "Kenali lebih dekat Fake Store. Toko online yang menyediakan produk fashion, elektronik, dan perhiasan dengan harga terbaik.",
-    images: "https://fake-store-beta-taupe.vercel.app/assets/images/og/about-fakestore-og.jpg"
+    images: "https://fake-store-beta-taupe.vercel.app/assets/images/og/opengraph-image.jpg"
   }
 }
 

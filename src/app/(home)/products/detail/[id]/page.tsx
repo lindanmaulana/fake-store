@@ -38,14 +38,14 @@ export const generateMetadata = async ({params}: DetailPageProps): Promise<Metad
         openGraph: {
             title: `Fake Store | ${dataProduct.title}`,
             description: `${dataProduct.description}`,
-            images: "http://localhost:3000/assets/images/popular-product/bag-linm-store-og.png",
-            url: "http://localhost:3000"
+            images: `${dataProduct.image}`,
+            url: `https://fake-store-beta-taupe.vercel.app/products/detail/${dataProduct.id}`
         },
         twitter: {
             card: "summary_large_image",
             title:`Fake Store | ${dataProduct.title}`,
             description: `${dataProduct.description}`,
-            images: "http://localhost:3000/assets/images/popular-product/bag-linm-store-og.png",
+            images: `${dataProduct.image}`,
         }
     }
 }

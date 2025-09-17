@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Daftar Produk | Fake Store",
     description:
       "Temukan berbagai pilihan produk terbaik. Fashion, elektronik, dan perhiasan dari Fake Store.",
-    images: "https://fake-store-beta-taupe.vercel.app/assets/images/og/products-fakestore-og.jpg",
+    images: "https://fake-store-beta-taupe.vercel.app/assets/images/og/opengraph-image.jpg",
     url: "https://fake-store-beta-taupe.vercel.app/products"
   },
   twitter: {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Products | Fake Store - Fashion, Elektronik, & Perhiasan",
     description:
       "Belanja semua produk unggulan di Fake Store. Fashion, elektronik, dan perhiasan dengan harga terjangkau.",
-    images: "https://fake-store-beta-taupe.vercel.app/assets/images/og/products-fakestore-og.jpg"
+    images: "https://fake-store-beta-taupe.vercel.app/assets/images/og/opengraph-image.jpg"
   }
 }
 
